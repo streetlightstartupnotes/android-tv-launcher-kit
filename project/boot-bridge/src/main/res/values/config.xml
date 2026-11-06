@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Quiet TV Bridge</string>
+    <string name="target_package" translatable="false">org.example.tvlauncher</string>
+    <string name="target_activity" translatable="false">org.example.tvlauncher.MainActivity</string>
+    <bool name="enable_vendor_menu_relay">false</bool>
+    <bool name="enable_startup_entry">false</bool>
+</resources>

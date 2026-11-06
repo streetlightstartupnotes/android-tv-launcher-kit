@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Quiet TV</string>
+    <!-- Off by default. Enable only after observing this exact MENU relay on your firmware. -->
+    <bool name="enable_vendor_menu_relay">false</bool>
+    <!-- Public Android settings actions are the portable defaults. -->
+    <string name="native_menu_mode" translatable="false">activity</string>
+    <string name="native_menu_action" translatable="false">android.settings.SETTINGS</string>
+    <string name="native_menu_component" translatable="false"></string>
+    <string name="native_wifi_action" translatable="false">android.settings.WIFI_SETTINGS</string>
+    <string name="native_bluetooth_action" translatable="false">android.settings.BLUETOOTH_SETTINGS</string>
+    <string name="native_display_action" translatable="false">android.settings.DISPLAY_SETTINGS</string>
+    <!-- Empty means unavailable. Use exported components/actions verified for the target firmware. -->
+    <string name="native_original_home_component" translatable="false"></string>
+    <string name="native_inputs_mode" translatable="false">activity</string>
+    <string name="native_inputs_action" translatable="false"></string>
+    <string name="native_inputs_component" translatable="false"></string>
+</resources>

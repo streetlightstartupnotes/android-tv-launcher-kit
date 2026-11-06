@@ -1,0 +1,7 @@
+<resources>
+    <style name="BridgeTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">#080D11</item>
+        <item name="android:colorAccent">#CEE2E1</item>
+    </style>
+</resources>

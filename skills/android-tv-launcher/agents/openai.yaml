@@ -1,0 +1,4 @@
+interface:
+  display_name: "Android TV 桌面工程"
+  short_description: "构建与原生应用共存的电视桌面，排查启动、待机、按键与动效，并保留恢复路径"
+  default_prompt: "使用 $android-tv-launcher 排查这台电视的桌面问题，区分冷启动和待机，完成兼容实现与实机验收。"

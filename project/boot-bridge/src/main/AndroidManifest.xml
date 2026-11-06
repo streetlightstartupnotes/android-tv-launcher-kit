@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature android:name="android.hardware.touchscreen" android:required="false" />
+    <application android:label="@string/app_name" android:allowBackup="false"
+        android:fullBackupContent="false" android:enableOnBackInvokedCallback="false"
+        android:theme="@style/BridgeTheme">
+        <activity android:name=".BridgeActivity" android:exported="true" android:launchMode="singleTask"
+            android:screenOrientation="landscape" android:excludeFromRecents="true"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <!-- Vendor INFO entry is opt-in and requires an independently verified adapter. -->
+        <activity android:name=".StartupActivity" android:enabled="@bool/enable_startup_entry"
+            android:exported="true" android:launchMode="singleTask"
+            android:taskAffinity="org.example.tvlauncher.bridge.startup"
+            android:screenOrientation="landscape" android:excludeFromRecents="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.INFO" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
